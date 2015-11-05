@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* -- FIRST DIV -- */
+.bg-white:first-of-type section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bg-white ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bg-white ul { 
+    list-style: none;
+    width: 75%;
+    float: right;
+}
+
+.bg-white ul li {
+    float: left;
+    margin: 0 1rem 0 0;
+}
+
+.bg-white h1 {
+    width: 25%;
+    float: left;
+}
+
+
+/* -- SECOND DIV -- */
+.bg-people {
+    background-color: coral;
+}
+
+
+/* -- THIRD DIV -- */
+.bg-gold ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.bg-gold ul li {
+    width: 25%; 
+    float: left;
+    text-align: center;
+}
+
