@@ -1,2 +1,229 @@
+/* -- DEFAULTS -- */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    line-height: 3rem;
+}
+.box {
+    width: 70%;
+    margin: 0 auto;
+}
 
 
+/* -- FIRST DIV -- */
+.bg-white {
+	background-color: #fff;
+}
+.first .box::after { /* clear <h1> floated left and <ul> floated right */
+    content: "";
+    display: block;
+    clear: both;
+}
+.first ul::after { /* clear <li> floated left */
+    content: "";
+    display: block;
+    clear: both;
+}
+.first ul { 
+    float: right;
+    margin: 2.5rem 0 0 0;
+}
+.first ul li {
+    float: left;
+    margin: 0 1rem 0 0;
+    line-height: 2rem;
+}
+.first ul li:first-of-type { /* access the first <li> */
+    color: gold;
+}
+.first h1 {
+    width: 30%;
+    float: left;
+    margin: 2rem 0;
+}
+.first h1 span {
+    font-style: italic;
+}
+
+
+/* -- SECOND DIV -- */
+.bg-people {
+    background-image: url(given-resources/bg/creative-office.jpg);
+    background-size: cover; /* bg image will always cover the assigned area regardless of screen-size */
+    color: white;
+    padding: 2rem 0 3rem 0;
+}
+.bg-people a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0 1rem 0 0;
+    border: 1px solid white;
+}
+.bg-people h1 span:first-of-type { /* accessing '+' in <h1> */
+    font-family: Impact, sans-serif;
+    vertical-align: middle;
+    font-size: 4rem;
+    color: gold;
+}
+.bg-people h1 span:last-of-type {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+
+/* -- THIRD DIV -- */
+.bg-gold {
+	background-color: gold;
+}
+.bg-gold ul::after { /* clear <li> floated left */
+    content: "";
+    display: block;
+    clear: both;
+}
+.bg-gold ul li {
+    width: 25%; 
+    float: left;
+    text-align: center;
+}
+.bg-gold li a {
+    text-decoration: none;
+}
+.bg-gold li span {
+    display: block;
+}
+.bg-gold li span:first-child { /* this span holds the svg image - set to white bg and round shape */
+    padding: 1.5rem 0 0 0;
+    margin: 2rem auto 1rem auto;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 40px;
+    background-color: #fff;
+}
+.bg-gold li span:last-child {
+    margin: 0 auto 2rem auto;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* -- FOURTH DIV -- */
+.second {
+    padding: 2rem 0;
+}
+.second ul::after{ /* clear <li> floated left */
+    content: "";
+    display: block;
+    clear: both;
+}
+.second::after{ /* clear <p> floated left */
+    content: "";
+    display: block;
+    clear: both;
+}
+.second h1 span:first-of-type { /* accessing '+' in <h1> */
+    font-family: Impact, sans-serif;
+    vertical-align: middle;
+    font-size: 4rem;
+}
+.second h1 span:last-of-type {
+    font-style: italic;
+}
+.second ul li{
+    float: left;
+    width: 25%;
+    padding: 0 1rem 0 0;
+}
+.second ul li img{
+    width: 100%;
+    height: auto;
+}
+.second p{
+    width: 50%;
+    float: left;
+    padding: 0 1rem 0 0;
+    line-height: 1.5rem;
+}
+.second p:last-child{
+    padding: 0;
+}
+
+
+/* -- FIFTH DIV -- */
+.bg-black {
+	background-color: #212121;
+    color: white;
+    padding: 2rem 0 3rem 0;
+}
+.bg-black h1 {
+    text-transform: uppercase;
+}
+.bg-black h1 span:first-of-type { /* accessing '+' in <h1> */
+    font-family: Impact, sans-serif;
+    vertical-align: middle;
+    font-size: 4rem;
+}
+.bg-black h1 span:last-of-type {
+    font-style: italic;
+    text-transform: lowercase;
+}
+.bg-black .container {
+	width: 50%;
+    float: left;
+    padding: 0 2rem 0 0;
+}
+.bg-black .container img {
+	width: 80%;
+    height: auto;
+}
+.bg-black .container ul {
+	margin: 0 0 1.2rem 0;
+}
+.bg-black .container ul li {
+	margin: 0 0 0.8rem 0;
+}
+.box::after { /* clear <div class="container"> floated left */
+	content: "";
+    display: block;
+    clear: both;
+}
+.form-box {
+    padding: 0.5rem;
+}
+.form-box input{
+    border: none;
+    width: 100%;
+    height: 2rem;
+    padding: 1.5rem;
+}
+.form-box input[type="submit"]{
+    border: none;
+    background-color: gold;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.3rem 2.3rem 2.3rem 2.3rem;
+}
+.form-box textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+}
+
+
+/* -- SIXTH DIV -- */
+.third p {
+    text-align: center;
+}
